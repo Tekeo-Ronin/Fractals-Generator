@@ -25,7 +25,7 @@ M = (abs(A) < 2);		% Якщо абсолютно значення (abs) комп
 
 % виводимо результат
 
-colormap(gray);
+colormap(spring);
 imagesc(M);
 axis equal;
 waitforbuttonpress;
