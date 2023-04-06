@@ -29,3 +29,4 @@ colormap(spring);
 imagesc(M);
 axis equal;
 waitforbuttonpress;
+
