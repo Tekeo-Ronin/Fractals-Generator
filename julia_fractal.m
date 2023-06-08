@@ -1,17 +1,18 @@
-function mandelbrot(color)
+function julia_fractal(color)
 
     resolution = 1000;
-    x = linspace(-2, 1, resolution);
-    y = linspace(-1.5, 1.5, resolution);
+    x = linspace(-2, 2, resolution);
+    y = linspace(-2, 2, resolution);
     
     [X, Y] = meshgrid(x, y);
     Z = X + 1i * Y;
     
     img = zeros(resolution);
     max_iter = 100;
+    c = -0.8 + 0.156i;
     
     for n = 1:max_iter
-        Z = Z.^2 + X + 1i * Y;
+        Z = Z.^2 + c;
         mask = abs(Z) < 2;
         img = img + mask;
     end
@@ -21,7 +22,7 @@ function mandelbrot(color)
     colormap(color);
     colorbar;
     axis equal;
-    title('Zbiór Mandelbrota');
-	
+    title('Zbiór Julii');
+
 	waitforbuttonpress;
 end
