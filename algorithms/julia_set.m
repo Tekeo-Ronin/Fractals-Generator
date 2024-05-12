@@ -1,4 +1,4 @@
-function julia_fractal(color)
+function julia_set(color)
 
     resolution = 1000;
     x = linspace(-2, 2, resolution);
