@@ -33,4 +33,14 @@ function barnsley_fern()
 
     fern_visualization(color, fractalName, x, y);
 
-end
+    choice = input('Do you want save a picture? (y/n): ');
+
+    switch choice
+        case y
+            visualize_result(fractalName, color)
+        case n
+            disp('Goodbye!');
+        otherwise
+            disp('Goodbye!');
+
+    end

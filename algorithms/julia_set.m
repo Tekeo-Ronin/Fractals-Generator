@@ -25,4 +25,14 @@ function julia_set()
 
     set_visualization(color, fractalName, x, y, img);
 
-end
+    choice = input('Do you want save a picture? (y/n): ');
+
+    switch choice
+        case y
+            visualize_result(fractalName, color)
+        case n
+            disp('Goodbye!');
+        otherwise
+            disp('Goodbye!');
+
+    end

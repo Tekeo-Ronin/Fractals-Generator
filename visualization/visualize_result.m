@@ -1,12 +1,14 @@
 function visualize_result(fractalName, color)
 
-    folder = addpath("/outputFiles/");
+    chosenDir = uigetdir('', 'Choose a folder to save');
 
-    if ~isfolder(folder)
-        mkdir(folder);
+    if chosenDir == 0
+        disp('Save canceled');
+    else
+        filename = sprintf('%s_%s.png', fractalName, color);
+        full_path = fullfile(chosenDir, filename);
+        saveas(gcf, full_path);
+        disp(['Image saved to ' full_path]);
     end
 
-    filename = sprintf('%s_%s.png', fractalName, color);
-    full_path = fullfile(folder, filename);
-    saveas(gcf, full_path);
 end

@@ -27,9 +27,9 @@ function mandelbrot_set()
     choice = input('Do you want save a picture? (y/n): ');
 
     switch choice
-        case 'y'
+        case y
             visualize_result(fractalName, color)
-        case 'n'
+        case n
             disp('Goodbye!');
         otherwise
             disp('Goodbye!');
