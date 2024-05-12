@@ -8,14 +8,11 @@ choice = input('Select a fractal number: ');
 
 switch choice
     case 1
-        color = input('Enter the color of the fractal ("jet", "hot", "cool"): ', 's');
-        mandelbrot_set(color);
+        mandelbrot_set();
     case 2
-        color = input('Enter the color of the fractal ("red", "green", "blue"): ', 's');
-        barnsley_fern(color);
+        barnsley_fern();
     case 3
-        color = input('Enter the color of the fractal ("jet", "hot", "cool"): ', 's');
-        julia_set(color);
+        julia_set();
     otherwise
         disp('Wrong fractal selection.');
 end

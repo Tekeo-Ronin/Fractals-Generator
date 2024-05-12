@@ -1,8 +1,10 @@
-function mandelbrot_set(color)
+function mandelbrot_set()
+
+    color = input('Enter the color of the fractal ("jet", "hot", "cool"): ', 's');
 
     addpath("../visualization")
 
-    thisTitle = "Mandelbrot set";
+    fractalName = "Mandelbrot set";
 
     resolution = 1000;
     x = linspace(-2, 1, resolution);
@@ -20,6 +22,16 @@ function mandelbrot_set(color)
         img = img + mask;
     end
 
-    set_visualization(color, thisTitle, x, y, img);
+    set_visualization(color, fractalName, x, y, img);
 
-end
+    choice = input('Do you want save a picture? (y/n): ');
+
+    switch choice
+        case 'y'
+            visualize_result(fractalName, color)
+        case 'n'
+            disp('Goodbye!');
+        otherwise
+            disp('Goodbye!');
+
+    end

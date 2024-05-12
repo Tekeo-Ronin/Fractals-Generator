@@ -1,11 +1,11 @@
-function set_visualization(color, thisTitle, x, y, img)
+function set_visualization(color, fractalName, x, y, img)
 
     figure;
     imagesc(x, y, img);
     colormap(color);
     colorbar;
     axis equal;
-    title(thisTitle);
+    title(fractalName);
 
     waitforbuttonpress;
 end
