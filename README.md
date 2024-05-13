@@ -40,9 +40,10 @@ To use this project you will need:
 
 ### Mandelbrot set
 
-* A nested `for` loop is used to iterate over each point on the ![](https://quicklatex.com/cache3/ee/ql_33de62cceb62982aab7d2cea896c53ee_l3.png) plane.
-* For each point, an iterative process is performed using a `for` loop, computing the value of ![](https://quicklatex.com/cache3/ff/ql_0279d957cf71245885fc867ddb861eff_l3.png) according to the formula ![](https://quicklatex.com/cache3/5c/ql_aebf835eea455ef1b69a41bacfa28f5c_l3.png).
-* It checks whether the modulus of the obtained value of ![](https://quicklatex.com/cache3/ff/ql_0279d957cf71245885fc867ddb861eff_l3.png) exceeds 2. If not, the point is considered part of the Mandelbrot set.
+* A nested `for` loop is used to iterate over each point on the ![](https://quicklatex.com/cache3/77/ql_3d63939db78c76c3cd85f16ce64d6a77_l3.png) plane.
+* For each point, an iterative process is performed using a `for` loop, computing the value of ![](https://quicklatex.com/cache3/00/ql_507eeb1b9a6a7b5ccb1ed0d933ffa100_l3.png) according to the formula ![](https://quicklatex.com/cache3/16/ql_84cfded2d8758dbf79e7a7c795468116_l3.png).
+
+* It checks whether the modulus of the obtained value of ![](https://quicklatex.com/cache3/00/ql_507eeb1b9a6a7b5ccb1ed0d933ffa100_l3.png) exceeds 2. If not, the point is considered part of the Mandelbrot set.
 * The number of iterations required for divergence is used to determine the color of each point.
 
 ### Barnsley fern
@@ -53,7 +54,8 @@ To use this project you will need:
 
 ### Julia set
 
-* Similar to the Mandelbrot set, a `for` loop is used to iteratively compute the values of points on the ![](https://quicklatex.com/cache3/ee/ql_33de62cceb62982aab7d2cea896c53ee_l3.png) plane.
-* Instead of the point ![](https://quicklatex.com/cache3/0d/ql_2e37e5ecaace4ea6eb651ba44aa1010d_l3.png) being dependent on the coordinates of points on the plane, it is fixed.
-* The computation of ![](https://quicklatex.com/cache3/ff/ql_0279d957cf71245885fc867ddb861eff_l3.png) values follows the formula ![](https://quicklatex.com/cache3/5c/ql_aebf835eea455ef1b69a41bacfa28f5c_l3.png).
-* Each point is considered part of the Julia set if the modulus of the obtained value of ![](https://quicklatex.com/cache3/ff/ql_0279d957cf71245885fc867ddb861eff_l3.png) does not exceed 2 after a certain number of iterations.
+* Similar to the Mandelbrot set, a `for` loop is used to iteratively compute the values of points on the 
+![](https://quicklatex.com/cache3/77/ql_3d63939db78c76c3cd85f16ce64d6a77_l3.png) plane.
+* Instead of the point ![](https://quicklatex.com/cache3/f8/ql_37025cf60876c91e1cfc66822263f8f8_l3.png) being dependent on the coordinates of points on the plane, it is fixed.
+* The computation of ![](https://quicklatex.com/cache3/00/ql_507eeb1b9a6a7b5ccb1ed0d933ffa100_l3.png) values follows the formula ![](https://quicklatex.com/cache3/16/ql_84cfded2d8758dbf79e7a7c795468116_l3.png).
+* Each point is considered part of the Julia set if the modulus of the obtained value of ![](https://quicklatex.com/cache3/00/ql_507eeb1b9a6a7b5ccb1ed0d933ffa100_l3.png) does not exceed 2 after a certain number of iterations.
