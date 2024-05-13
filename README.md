@@ -1,4 +1,4 @@
-# Fraktal generator
+# Fraktals generator
 
 ![fractals](/outputFiles/set.jpg)
 
@@ -21,7 +21,7 @@ To use this project you will need:
 2. Go to the folder with the project:
 
 ```bash
-    cd Fractal-Generator
+    cd Fractals-Generator
 ```
 
 3. Start Octave by running the command:
@@ -40,9 +40,9 @@ To use this project you will need:
 
 ### Mandelbrot set
 
-* A nested `for` loop is used to iterate over each point on the \( (x, y) \) plane.
-* For each point, an iterative process is performed using a `for` loop, computing the value of \( Z \) according to the formula \( Z_{n+1} = Z_{n}^2 + c \).
-* It checks whether the modulus of the obtained value of \( Z \) exceeds 2. If not, the point is considered part of the Mandelbrot set.
+* A nested `for` loop is used to iterate over each point on the ![](https://quicklatex.com/cache3/ee/ql_33de62cceb62982aab7d2cea896c53ee_l3.png) plane.
+* For each point, an iterative process is performed using a `for` loop, computing the value of ![](https://quicklatex.com/cache3/ff/ql_0279d957cf71245885fc867ddb861eff_l3.png) according to the formula ![](https://quicklatex.com/cache3/5c/ql_aebf835eea455ef1b69a41bacfa28f5c_l3.png).
+* It checks whether the modulus of the obtained value of ![](https://quicklatex.com/cache3/ff/ql_0279d957cf71245885fc867ddb861eff_l3.png) exceeds 2. If not, the point is considered part of the Mandelbrot set.
 * The number of iterations required for divergence is used to determine the color of each point.
 
 ### Barnsley fern
@@ -53,7 +53,7 @@ To use this project you will need:
 
 ### Julia set
 
-* Similar to the Mandelbrot set, a `for` loop is used to iteratively compute the values of points on the \( (x, y) \) plane.
-* Instead of the point \( c \) being dependent on the coordinates of points on the plane, it is fixed.
-* The computation of \( Z \) values follows the formula \( Z_{n+1} = Z_{n}^2 + c \).
-* Each point is considered part of the Julia set if the modulus of the obtained value of \( Z \) does not exceed 2 after a certain number of iterations.
+* Similar to the Mandelbrot set, a `for` loop is used to iteratively compute the values of points on the ![](https://quicklatex.com/cache3/ee/ql_33de62cceb62982aab7d2cea896c53ee_l3.png) plane.
+* Instead of the point ![](https://quicklatex.com/cache3/0d/ql_2e37e5ecaace4ea6eb651ba44aa1010d_l3.png) being dependent on the coordinates of points on the plane, it is fixed.
+* The computation of ![](https://quicklatex.com/cache3/ff/ql_0279d957cf71245885fc867ddb861eff_l3.png) values follows the formula ![](https://quicklatex.com/cache3/5c/ql_aebf835eea455ef1b69a41bacfa28f5c_l3.png).
+* Each point is considered part of the Julia set if the modulus of the obtained value of ![](https://quicklatex.com/cache3/ff/ql_0279d957cf71245885fc867ddb861eff_l3.png) does not exceed 2 after a certain number of iterations.
