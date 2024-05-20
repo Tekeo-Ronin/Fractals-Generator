@@ -59,3 +59,11 @@ To use this project you will need:
 * Instead of the point ![](https://quicklatex.com/cache3/f8/ql_37025cf60876c91e1cfc66822263f8f8_l3.png) being dependent on the coordinates of points on the plane, it is fixed.
 * The computation of ![](https://quicklatex.com/cache3/00/ql_507eeb1b9a6a7b5ccb1ed0d933ffa100_l3.png) values follows the formula ![](https://quicklatex.com/cache3/16/ql_84cfded2d8758dbf79e7a7c795468116_l3.png).
 * Each point is considered part of the Julia set if the modulus of the obtained value of ![](https://quicklatex.com/cache3/00/ql_507eeb1b9a6a7b5ccb1ed0d933ffa100_l3.png) does not exceed 2 after a certain number of iterations.
+
+## Contributing
+
+Feel free to fork the repository and submit pull requests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
